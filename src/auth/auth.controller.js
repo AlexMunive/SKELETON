@@ -1,8 +1,7 @@
-//* email y contraseña de usuario
+//* Email y Contraseña del usuario 
 
 const { getUserByEmail } = require("../users/users.controllers")
-const { comparePassword}= require('../utils/crypto')
-
+const {comparePassword} = require('../utils/crypto')
 //? El email es unico en mi base de datos
 
 const loginUser = async (email, password) => {
@@ -23,7 +22,8 @@ const loginUser = async (email, password) => {
     }
 }
 
+
+
 module.exports = {
     loginUser
 }
-
